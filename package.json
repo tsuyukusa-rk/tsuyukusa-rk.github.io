@@ -11,6 +11,7 @@
     "deploy": "npm run build && gh-pages --dist build --branch master"
   },
   "dependencies": {
+    "material-ui": "^0.19.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
