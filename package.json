@@ -2,7 +2,7 @@
   "name": "fogGoat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tsuyukusa-rk.github.io/fogGoat",
+  "homepage": "https://tsuyukusa-rk.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
