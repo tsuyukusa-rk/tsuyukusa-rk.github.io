@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import globalStyle from './global-style'
-import Top from './components/pages/top/'
+import Routes from './routes'
 
-ReactDOM.render(<Top />, document.getElementById('root'))
+ReactDOM.render(<Routes /> , document.getElementById('root'))
