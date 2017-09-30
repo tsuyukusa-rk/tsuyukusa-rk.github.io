@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://tsuyukusa-rk.github.io/",
   "scripts": {
-    "start": "HTTPS=true react-scripts start",
+    "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
@@ -16,12 +16,36 @@
     "material-ui": "^0.19.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-icons": "^2.2.5",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "styled-components": "^2.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-class-property": "^1.0.6",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-private-props": "^0.3.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.0.0",
     "standard": "^10.0.3"
+  },
+  "babel": {
+    "plugins": [ "transform-class-properties" ]
+  },
+  "standard": {
+    "globals": [],
+    "parser": "babel-eslint",
+    "extends": [],
+    "plugins": []
   }
 }

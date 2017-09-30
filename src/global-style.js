@@ -1,6 +1,12 @@
 import { injectGlobal } from 'styled-components'
+import { colors } from './const/'
 
 injectGlobal`
+
+  /**
+   * reset
+   */
+
   /* http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
   License: none (public domain)
@@ -48,28 +54,27 @@ injectGlobal`
     border-spacing: 0;
   }
 
-  /**
-   * 追記
-   */
+  /* 追記 */
   html {
     box-sizing: border-box;
   }
-
   *, *:before, *:after {
     box-sizing: inherit;
   }
-
-  img,
-  embed,
-  iframe,
-  object,
-  audio,
-  video {
+  img, embed, iframe, object, audio, video {
     height: auto;
     max-width: 100%;
   }
-
   iframe {
     border: 0;
+  }
+
+  /**
+   * basic style
+   */
+  body {
+    color: ${colors.black};
+    font-family: Raleway, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 13px;
   }
 `
