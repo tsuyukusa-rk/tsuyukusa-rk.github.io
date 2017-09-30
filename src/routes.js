@@ -7,8 +7,8 @@ import Top from './components/pages/top/'
 export default () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/test" component={Top} />
-      <Route exact path="/" component={Top} />
+      <Route path='/test' component={Top} />
+      <Route exact path='/' component={Top} />
     </Switch>
   </BrowserRouter>
 )
