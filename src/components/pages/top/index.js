@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { Drawer, MenuItem } from 'material-ui'
@@ -33,8 +34,12 @@ export default class App extends Component {
             docked={false}
             onRequestChange={(open) => this.setState({open})}
           >
-            <MenuItem primaryText="Schedule" leftIcon={<IconCalendar />} onClick={this.handleClose} />
-            <MenuItem primaryText="Contact" leftIcon={<IconContact />} onClick={this.handleClose} />
+            <NavItem to='/schedule'>
+              <MenuItem primaryText="Schedule" leftIcon={<IconCalendar />} onClick={this.handleClose} />
+            </NavItem>
+            <NavItem to='/contact'>
+              <MenuItem primaryText="Contact" leftIcon={<IconContact />} onClick={this.handleClose} />
+            </NavItem>
           </Sidebar>
         </Header>
         <Main>
@@ -72,7 +77,8 @@ export default class App extends Component {
 }
 
 const Wrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 100px;
 `
 const Header = styled.header`
   background: url(${mainImage}) no-repeat center center;
@@ -85,8 +91,9 @@ const Title = styled.h1`
   color: ${white};
   font-size: 42px;
   position: absolute;
-  top: 48%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: bold;
 `
 const BtnMenu = styled.div`
@@ -103,6 +110,10 @@ const BtnMenu = styled.div`
   }
 `
 const Sidebar = styled(Drawer)``
+const NavItem = styled(Link)`
+  display: block;
+  text-decoration: none;
+`
 const Main = styled.main`
   width: 100%;
 `
