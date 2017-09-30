@@ -8,15 +8,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages --dist build --branch master"
+    "deploy": "npm run build && gh-pages --dist build --branch master",
+    "lint": "standard",
+    "fix": "standard --fix"
   },
   "dependencies": {
     "material-ui": "^0.19.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "styled-components": "^2.2.0"
   },
   "devDependencies": {
+    "standard": "^10.0.3",
     "gh-pages": "^1.0.0"
   }
 }
