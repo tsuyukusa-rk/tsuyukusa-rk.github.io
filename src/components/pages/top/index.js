@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../../organisms/header/'
+import Footer from '../../organisms/footer/'
 import CardList from './card-list'
 import mainImage from '../../../images/main.jpg'
 import main02Image from '../../../images/main02.jpg'
@@ -15,12 +16,14 @@ export default () => (
       <CardList />
       <Concept>Concept</Concept>
     </Main>
+    <Footer />
   </Wrapper>
 )
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
+  position: relative;
 `
 const Background = styled.div`
   background: url(${mainImage}) no-repeat center center;
