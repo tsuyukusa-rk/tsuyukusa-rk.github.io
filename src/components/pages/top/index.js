@@ -3,10 +3,9 @@ import styled from 'styled-components'
 import Header from '../../organisms/header/'
 import Footer from '../../organisms/footer/'
 import CardList from './card-list'
+import Concept from './concept'
 import mainImage from '../../../images/main.jpg'
 import main02Image from '../../../images/main02.jpg'
-import { colors } from '../../../const/'
-const { white } = colors
 
 export default () => (
   <Wrapper>
@@ -14,7 +13,7 @@ export default () => (
     <Header />
     <Main>
       <CardList />
-      <Concept>Concept</Concept>
+      <Concept />
     </Main>
     <Footer />
   </Wrapper>
@@ -38,15 +37,4 @@ const Background = styled.div`
 const Main = styled.main`
   width: 100%;
   padding-top: calc(100vh - 100px);
-`
-const Concept = styled.div`
-  background: url(${main02Image}) no-repeat right center #000;
-  background-size: auto 100%;
-  opacity: 0.85;
-  height: 600px;
-  color: ${white};
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  padding: 50px 0;
 `
