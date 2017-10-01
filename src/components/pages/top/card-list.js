@@ -38,7 +38,7 @@ export default () => (
 
 const Wrapper = styled.section`
   background-color: ${white};
-  opacity: 0.9;
+  opacity: 0.85;
   padding: 50px 0;
 `
 const SubTitle = styled.h2`

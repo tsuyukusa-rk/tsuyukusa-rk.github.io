@@ -43,16 +43,17 @@ export default class Header extends Component {
 }
 
 const Wrapper = styled.header`
-  height: calc(100vh - 100px);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: ${white};
+  opacity: 0.85;
+  text-align: center;
 `
 const Title = styled.h1`
-  color: ${white};
-  font-size: 42px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 32px;
   font-weight: bold;
 `
 const BtnMenu = styled.div`
@@ -62,7 +63,6 @@ const BtnMenu = styled.div`
   font-size: 34px;
   width: 34px;
   height: 34px;
-  color: ${white};
   cursor: pointer;
   > svg {
     vertical-align: top !important;

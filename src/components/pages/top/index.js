@@ -30,4 +30,5 @@ const Background = styled.div`
 `
 const Main = styled.main`
   width: 100%;
+  padding-top: calc(100vh - 100px);
 `
