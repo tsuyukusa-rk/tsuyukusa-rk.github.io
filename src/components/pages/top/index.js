@@ -5,7 +5,6 @@ import Footer from '../../organisms/footer/'
 import CardList from './card-list'
 import Concept from './concept'
 import mainImage from '../../../images/main.jpg'
-import main02Image from '../../../images/main02.jpg'
 
 export default () => (
   <Wrapper>
