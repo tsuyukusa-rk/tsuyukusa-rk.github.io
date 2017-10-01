@@ -4,7 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 // components
 import Top from './components/pages/top/'
-import Schedule from './components/pages/schedule/'
+import Live from './components/pages/live/'
 import Contact from './components/pages/contact/'
 
 export default () => (
@@ -12,7 +12,7 @@ export default () => (
     <MuiThemeProvider>
       <Switch>
         <Route path='/contact' component={Contact} />
-        <Route path='/schedule' component={Schedule} />
+        <Route path='/live' component={Live} />
         <Route exact path='/' component={Top} />
       </Switch>
     </MuiThemeProvider>

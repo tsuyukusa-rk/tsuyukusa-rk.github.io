@@ -1,7 +1,7 @@
 // 白
 export const white = '#fffffb'
 // 黒
-export const black = '#000'
+export const black = '#333'
 // 藤煤竹
 export const glay = '#574c57'
 // 藍鼠
