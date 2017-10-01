@@ -33,6 +33,7 @@ export default class App extends Component {
             open={this.state.open}
             docked={false}
             onRequestChange={(open) => this.setState({open})}
+            containerStyle={{backgroundColor: white}}
           >
             <NavItem to='/schedule'>
               <MenuItem primaryText="Schedule" leftIcon={<IconCalendar />} onClick={this.handleClose} />
@@ -78,7 +79,7 @@ export default class App extends Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 `
 const Header = styled.header`
   background: url(${mainImage}) no-repeat center center;

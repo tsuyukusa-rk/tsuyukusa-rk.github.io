@@ -1,5 +1,5 @@
 // 白
-export const white = '#fff'
+export const white = '#fffffb'
 // 黒
 export const black = '#000'
 // 藤煤竹
