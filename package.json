@@ -7,7 +7,7 @@
     "start": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "node scripts/build.js",
-    "deploy": "npm run build && gh-pages --dist build --branch master",
+    "deploy": "npm run predeploy && gh-pages --dist build --branch master",
     "lint": "standard",
     "fix": "standard --fix"
   },
