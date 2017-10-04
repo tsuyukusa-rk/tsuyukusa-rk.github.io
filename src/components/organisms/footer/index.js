@@ -5,7 +5,7 @@ const { white } = colors
 
 export default () => (
   <Wrapper>
-    <p>Copyright© fogGoat All Right Reserved</p>
+    <p>Copyright© fogs goat All Right Reserved</p>
   </Wrapper>
 )
 

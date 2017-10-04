@@ -21,7 +21,7 @@ export default class Header extends Component {
   render () {
     return (
       <Wrapper>
-        <Title>fogGoat</Title>
+        <Title>fogs goat</Title>
         <BtnMenu onClick={this.handleToggle}><ThLargeOutline /></BtnMenu>
         <Sidebar
           width={300}
