@@ -2,6 +2,11 @@ import { takeEvery, put, call } from 'redux-saga/effects'
 import axios from 'axios'
 
 /**
+ * selectors
+ */
+export const liveScheduleSelector = ({ schedule }) => schedule.liveSchedule
+
+/**
  * actions
  */
 const FETCH_LIVE_SCHEDULE = 'app/schedule/FETCH_LIVE_SCHEDULE'

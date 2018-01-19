@@ -1,20 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { fetchLiveSchedule } from '../../../redux/modules/schedule'
+import { compose, lifecycle, setPropTypes } from 'recompose'
+import {
+  fetchLiveSchedule,
+  liveScheduleSelector
+} from '../../../redux/modules/schedule'
 
-class Live extends Component {
-  componentDidMount () {
-    this.props.fetchLiveSchedule()
-  }
-  render () {
-    return (
-      <div>contact</div>
-    )
-  }
-}
-
-export default connect(
-  ({ schedule: { liveSchedule } }) => liveSchedule,
-  (dispatch) => bindActionCreators({ fetchLiveSchedule }, dispatch)
-)(Live)
+export default compose(
+  connect(
+    (state) => ({ liveSchedule: liveScheduleSelector(state) }),
+    { fetchLiveSchedule }
+  ),
+  lifecycle({
+    componentDidMount () { this.props.fetchLiveSchedule() }
+  }),
+  setPropTypes({
+    liveSchedule: PropTypes.object.isRequired,
+    fetchLiveSchedule: PropTypes.func.isRequired
+  })
+)(({
+  liveSchedule,
+  fetchLiveSchedule
+}) => (
+  <div>contact</div>
+))
