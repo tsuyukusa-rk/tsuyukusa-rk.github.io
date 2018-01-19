@@ -16,7 +16,7 @@ const UPDATE_LIVE_SCHEDULE = 'app/schedule/UPDATE_LIVE_SCHEDULE'
  * initialState
  */
 const initialState = {
-  liveSchedule: {}
+  liveSchedule: []
 }
 
 /**

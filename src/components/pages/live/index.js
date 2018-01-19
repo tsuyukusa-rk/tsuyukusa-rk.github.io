@@ -16,12 +16,16 @@ export default compose(
     componentDidMount () { this.props.fetchLiveSchedule() }
   }),
   setPropTypes({
-    liveSchedule: PropTypes.object.isRequired,
+    liveSchedule: PropTypes.array.isRequired,
     fetchLiveSchedule: PropTypes.func.isRequired
   })
 )(({
   liveSchedule,
   fetchLiveSchedule
 }) => (
-  <div>contact</div>
+  <div>
+    {liveSchedule.map((item, i) => (
+      <p key={i}>{item.date}</p>
+    ))}
+  </div>
 ))
