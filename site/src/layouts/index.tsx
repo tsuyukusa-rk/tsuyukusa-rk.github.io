@@ -1,7 +1,16 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import Header from '../components/header'
-import './inject-global'
+import Header from './header'
+import 'bulma'
+import { injectGlobal } from 'styled-components'
+
+injectGlobal`
+  @import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
+
+  body > div {
+    font-family: 'Rounded Mplus 1c';
+  }
+`
 
 interface Props {
   children: () => JSX.Element
@@ -14,7 +23,7 @@ interface Props {
   }
 }
 
-const Layout = ({ children, data }: Props): JSX.Element => (
+export default ({ children, data }: Props): JSX.Element => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -24,20 +33,9 @@ const Layout = ({ children, data }: Props): JSX.Element => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    {children()}
   </div>
 )
-
-export default Layout
 
 declare function graphql(x: TemplateStringsArray): any
 export const query = graphql`

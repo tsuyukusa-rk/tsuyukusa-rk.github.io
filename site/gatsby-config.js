@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'fogGoat',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -11,5 +11,11 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        precision: 8
+      },
+    }
   ],
 }
