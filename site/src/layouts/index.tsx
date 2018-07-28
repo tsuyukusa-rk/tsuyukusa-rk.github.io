@@ -1,16 +1,9 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Header from './header'
-import 'bulma'
-import { injectGlobal } from 'styled-components'
-
-injectGlobal`
-  @import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
-
-  body > div {
-    font-family: 'Rounded Mplus 1c';
-  }
-`
+import Footer from './footer'
+import '../../node_modules/@fortawesome/fontawesome-free/js/all'
+import '../index.scss'
 
 interface Props {
   children: () => JSX.Element
@@ -34,6 +27,7 @@ export default ({ children, data }: Props): JSX.Element => (
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     {children()}
+    <Footer />
   </div>
 )
 

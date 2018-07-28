@@ -1,6 +1,12 @@
+const liveSchedule = require('./config/live-schedule.js')
+const siteMetaData = require('./config/site-meta-data.js')
+
+console.log(liveSchedule)
+
 module.exports = {
   siteMetadata: {
-    title: 'fogGoat',
+    ...siteMetaData,
+    liveSchedule: liveSchedule
   },
   plugins: [
     'gatsby-plugin-react-helmet',
