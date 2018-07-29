@@ -8,39 +8,53 @@ interface Props {
 }
 
 export default ({ siteTitle }: Props): JSX.Element => (
-  <Header className='hero is-large'>
-    <div className='hero-head container is-mobile'>
-      <div className='level-right is-mobile section'>
-        <a className='level-item has-text-dark'>
-          <span className='icon'><i className='fab fa-twitter' /></span>
+  <Header className="hero is-large">
+    <div className="hero-head container is-mobile">
+      <div className="level-right is-mobile section">
+        <a className="level-item has-text-dark">
+          <span className="icon">
+            <i className="fab fa-twitter" />
+          </span>
           <span>twitter</span>
         </a>
-        <a href='https://github.com/tsuyukusa-rk' target='_blank' className='level-item has-text-dark'>
-          <span className='icon'><i className='fab fa-github' /></span>
+        <a
+          href="https://github.com/tsuyukusa-rk"
+          target="_blank"
+          className="level-item has-text-dark"
+        >
+          <span className="icon">
+            <i className="fab fa-github" />
+          </span>
           <span>github</span>
         </a>
       </div>
     </div>
 
-    <div className='hero-body'>
-      <div className='container has-text-centered'>
-        <Logo className='has-text-white'>
-          {siteTitle}
-        </Logo>
-        <p className='subtitle is-7 has-text-white'>
+    <div className="hero-body">
+      <div className="container has-text-centered">
+        <Logo className="has-text-white">{siteTitle}</Logo>
+        <p className="subtitle is-7 has-text-white">
           singer songwriter and programmer
         </p>
       </div>
     </div>
 
-    <div className='hero-foot'>
-      <nav className='tabs'>
-        <div className='container'>
+    <div className="hero-foot">
+      <nav className="tabs">
+        <div className="container">
           <ul>
-            <li><a className='has-text-white'>Top</a></li>
-            <li><a className='has-text-white'>Biography</a></li>
-            <li><a className='has-text-white'>Sound sources</a></li>
-            <li><a className='has-text-white'>Live schedule</a></li>
+            <li>
+              <a className="has-text-white">Top</a>
+            </li>
+            <li>
+              <a className="has-text-white">Biography</a>
+            </li>
+            <li>
+              <a className="has-text-white">Sound sources</a>
+            </li>
+            <li>
+              <a className="has-text-white">Live schedule</a>
+            </li>
           </ul>
         </div>
       </nav>

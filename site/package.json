@@ -25,10 +25,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.tsx'",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^1.0.26",
+    "gh-pages": "^1.2.0",
     "prettier": "^1.12.0",
     "recompose": "^0.27.1"
   },
