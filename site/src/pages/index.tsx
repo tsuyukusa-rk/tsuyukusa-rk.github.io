@@ -82,7 +82,7 @@ const CircleSection = styled.div`
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 45%), url(${circleImage}) no-repeat center;
+    background: radial-gradient(rgba(0,0,0, 0) 0, rgba(0,0,0, 1) 45%), url(${circleImage}) no-repeat center;
     background-size: 100%;
     opacity: 0.6;
   }

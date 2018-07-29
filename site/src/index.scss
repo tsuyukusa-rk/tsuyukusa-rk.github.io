@@ -2,20 +2,28 @@
 
 @import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
 
+$body-background-color: #000;
 $body-family: 'Rounded Mplus 1c', sans-serif;
 $body-size: 13px;
-$body-color: #444;
+$body-color: #fff;
 $body-weight: 300;
-$strong-color: #444;
+$strong-color: #fff;
 $strong-weight: 300;
 $weight-normal: 300;
 $weight-semibold: 300;
 $weight-bold: 300;
-$card-header-color: #444;
-$section-padding:1rem 0rem;
-$section-padding-medium: 7rem 2rem;
+$card-header-color: #fff;
+$card-background-color: #222;
+$card-content-background-color: #111;
+$card-color: #fff;
+$link-hover: #fff;
+$title-color: #999;
+$title-line-height: 5;
+$section-padding: 1rem 0rem;
+$section-padding-medium: 4rem 2rem;
 $body-line-height: 1.6;
 $tabs-link-padding: 1rem;
+$footer-background-color: #111;
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";

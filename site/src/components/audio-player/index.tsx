@@ -61,7 +61,7 @@ export default compose(
   backPlaying
 }: Props) => (
   <Wrapper>
-    <section className="hero is-light">
+    <section className="hero is-black">
       <ReactPlayer
         ref={createRef}
         onProgress={({ playedSeconds }) => { updatePlayedSeconds(playedSeconds) }}
@@ -110,9 +110,11 @@ const CtrlWrapper = styled.div`
   }
 `
 const Wrapper = styled.div`
-  margin-top: 4rem;
+  margin-bottom: 4rem;
 `
 const Title = styled.div`
+  line-height: 1.125 !important;
+
   > .fa-signature {
     font-weight: 100;
     font-size: 1.5rem;
