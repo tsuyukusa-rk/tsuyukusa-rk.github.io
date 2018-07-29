@@ -1,0 +1,2 @@
+webpackJsonp([0xa25129398ba8],{218:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n(1);t.default=function(){return u.createElement("div",null,u.createElement("h1",null,"NOT FOUND"),u.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}});
+//# sourceMappingURL=component---src-pages-404-tsx-6b54500f392c64747eb2.js.map
