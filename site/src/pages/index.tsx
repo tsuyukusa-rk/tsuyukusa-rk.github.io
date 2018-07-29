@@ -47,6 +47,13 @@ export default ({ data }: Props) => (
       </div>
     </div>
     <Section className='section is-medium'>
+      <h3 className='title is-3 has-text-centered'>Sound sources</h3>
+      <CircleContents className='content'>
+        <AudioPlayer src={amaoto} title='雨音' />
+        <AudioPlayer src={movieStar} title='movie star' />
+      </CircleContents>
+    </Section>
+    <Section className='section is-medium'>
       <h3 className='title is-3 has-text-centered'>Live schedule</h3>
       <ul className='columns is-multiline is-3 is-variable'>
         {data.site.siteMetadata.liveSchedule.map((item, i) => (
@@ -64,13 +71,6 @@ export default ({ data }: Props) => (
           </li>
         ))}
       </ul>
-    </Section>
-    <Section className='section is-medium'>
-      <h3 className='title is-3 has-text-centered'>Sound sources</h3>
-      <CircleContents className='content'>
-        <AudioPlayer src={amaoto} title='雨音' />
-        <AudioPlayer src={movieStar} title='movie star' />
-      </CircleContents>
     </Section>
   </Wrapper>
 )

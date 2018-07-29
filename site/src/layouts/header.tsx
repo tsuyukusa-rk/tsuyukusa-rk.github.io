@@ -39,8 +39,8 @@ export default ({ siteTitle }: Props): JSX.Element => (
           <ul>
             <li><a className='has-text-white'>Top</a></li>
             <li><a className='has-text-white'>Biography</a></li>
+            <li><a className='has-text-white'>Sound sources</a></li>
             <li><a className='has-text-white'>Live schedule</a></li>
-            <li><a className='has-text-white'>Demo</a></li>
           </ul>
         </div>
       </nav>
