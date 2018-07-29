@@ -1,12 +1,12 @@
 const liveSchedule = require('./config/live-schedule.js')
 const siteMetaData = require('./config/site-meta-data.js')
-
-console.log(liveSchedule)
+const poetry = require('./config/poetry.js')
 
 module.exports = {
   siteMetadata: {
     ...siteMetaData,
-    liveSchedule: liveSchedule
+    liveSchedule: liveSchedule,
+    poetry: poetry
   },
   plugins: [
     'gatsby-plugin-react-helmet',
