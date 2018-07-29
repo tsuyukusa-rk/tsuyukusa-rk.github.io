@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import AudioPlayer from '../components/audio-player'
 import * as amaoto from '../audio/mp3/amaoto.mp3'
 import * as movieStar from '../audio/mp3/movie_star.mp3'
+import * as circleImage from '../images/circle.jpg'
 
 interface Props {
   data: {
@@ -38,7 +39,7 @@ export default ({ data }: Props) => (
         </ul>
       </Contents>
     </Section>
-    <Section className='section is-medium'>
+    <CircleSection className='section is-medium'>
       <h3 className='title is-3 has-text-centered'>Live schedule</h3>
       <ul className='columns is-multiline is-3 is-variable'>
         {data.site.siteMetadata.liveSchedule.map((item, i) => (
@@ -48,7 +49,7 @@ export default ({ data }: Props) => (
                 <p className='card-header-title'>{item.date}</p>
               </div>
               <div className='card-content'>
-                <a href={item.url} target='_blank'>{item.place}</a>
+                <LivePlace href={item.url} target='_blank'><i className="far fa-compass" />{item.place}</LivePlace>
                 <p>Ticket: {item.ticket}</p>
                 <p>Open: {item.time[0].open} / Start: {item.time[0].start}</p>
               </div>
@@ -56,7 +57,7 @@ export default ({ data }: Props) => (
           </li>
         ))}
       </ul>
-    </Section>
+    </CircleSection>
     <Section className='section is-medium'>
       <h3 className='title is-3 has-text-centered'>Demo</h3>
       <Contents className='content'>
@@ -69,7 +70,36 @@ export default ({ data }: Props) => (
 
 const Wrapper = styled.main``
 const Section = styled.div``
+const CircleSection = styled.div`
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 45%), url(${circleImage}) no-repeat center;
+    background-size: 100%;
+    opacity: 0.6;
+  }
+
+  > ul {
+    opacity: 0.9;
+  }
+`
 const Contents = styled.div``
+const LivePlace = styled.a`
+  margin-bottom: 0.6rem;
+  display: block;
+
+  .fa-compass {
+    margin-right: 0.5rem;
+  }
+`
 
 
 declare function graphql(x: TemplateStringsArray): any
