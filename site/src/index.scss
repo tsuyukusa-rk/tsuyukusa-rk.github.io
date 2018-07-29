@@ -24,6 +24,7 @@ $section-padding-medium: 4rem 2rem;
 $body-line-height: 1.6;
 $tabs-link-padding: 1rem;
 $footer-background-color: #111;
+$dimensions: 16 24 32 48 64 96 128 256;
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
