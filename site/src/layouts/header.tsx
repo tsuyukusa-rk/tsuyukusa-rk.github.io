@@ -28,7 +28,7 @@ export default ({ siteTitle }: Props): JSX.Element => (
           {siteTitle}
         </Logo>
         <p className='subtitle is-7 has-text-white'>
-          良さげなキャッチコピーを入れたい
+          singer songwriter and programmer
         </p>
       </div>
     </div>
@@ -56,5 +56,5 @@ const Logo = styled.h1`
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 `

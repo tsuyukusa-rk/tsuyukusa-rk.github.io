@@ -13,6 +13,7 @@
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typescript": "^1.4.20",
     "react-helmet": "^5.2.0",
+    "react-player": "^1.6.4",
     "styled-components": "^3.3.3",
     "typescript": "^2.9.2"
   },
@@ -28,7 +29,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^1.0.26",
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.0",
+    "recompose": "^0.27.1"
   },
   "repository": {
     "type": "git",
