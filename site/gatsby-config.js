@@ -22,6 +22,19 @@ module.exports = {
       options: {
         precision: 8
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "fogGoat",
+        short_name: "fogGoat",
+        start_url: "/",
+        background_color: "#f7f0eb",
+        theme_color: "#a2466c",
+        display: "minimal-ui",
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`
   ],
 }
