@@ -31,3 +31,9 @@ $footer-background-color: #111;
 @import "../node_modules/bulma/sass/layout/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1.0) }
+  48%, 52% { transform: scale(1.0) }
+  50% { transform: scale(1.2) }
+}

@@ -39,7 +39,7 @@ export default ({ data }: Props) => (
         </ul>
       </Contents>
     </Section>
-    <CircleSection className='section is-medium'>
+    <Section className='section is-medium'>
       <h3 className='title is-3 has-text-centered'>Live schedule</h3>
       <ul className='columns is-multiline is-3 is-variable'>
         {data.site.siteMetadata.liveSchedule.map((item, i) => (
@@ -57,20 +57,20 @@ export default ({ data }: Props) => (
           </li>
         ))}
       </ul>
-    </CircleSection>
+    </Section>
     <Section className='section is-medium'>
-      <h3 className='title is-3 has-text-centered'>Demo</h3>
-      <Contents className='content'>
+      <h3 className='title is-3 has-text-centered'>Sound sources</h3>
+      <CircleContents className='content'>
         <AudioPlayer src={amaoto} title='雨音' />
         <AudioPlayer src={movieStar} title='movie star' />
-      </Contents>
+      </CircleContents>
     </Section>
   </Wrapper>
 )
 
 const Wrapper = styled.main``
 const Section = styled.div``
-const CircleSection = styled.div`
+const CircleContents = styled.div`
   position: relative;
 
   &:before {
@@ -79,16 +79,15 @@ const CircleSection = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: radial-gradient(rgba(0,0,0, 0) 0, rgba(0,0,0, 1) 45%), url(${circleImage}) no-repeat center;
+    background: radial-gradient(rgba(0,0,0, 0) 0, rgba(0,0,0, 0.8) 45%), url(${circleImage}) no-repeat right center;
     background-size: 100%;
     opacity: 0.6;
-  }
-
-  > ul {
-    opacity: 0.9;
+    animation: bounce 4.0s infinite ease-in-out;
   }
 `
 const Contents = styled.div``
